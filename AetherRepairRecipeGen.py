@@ -63,7 +63,7 @@ def FillTemplate():
         entry["modid"] = entry["modid"].replace("%MODID%", mod_id)
         
       for entry in recipe_data["fabric:load_conditions"]:
-        entry["values"] = mod_id
+        entry["values"] = [mod_id]
 
       recipe_data["group"] = getGroupFromItem(item_name)
 

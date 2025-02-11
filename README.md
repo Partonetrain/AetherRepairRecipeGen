@@ -1,6 +1,7 @@
 # AetherRepairRecipeGen
 
 Generates repair recipes for the Altar (formerly Enchanter). These can be placed in datapacks to enhance compatibility with The Aether.
+[This is necessary since this type of recipe currently does not properly support tags](https://github.com/The-Aether-Team/The-Aether/issues/2546).
 Only tested with The Aether on NeoForge 1.21.1. You may be able to modify the script or template for other versions.
 
 # Usage
