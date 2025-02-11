@@ -1,0 +1,22 @@
+{
+    "neoforge:conditions": [
+        {
+            "type": "neoforge:mod_loaded",
+            "modid": "%MODID%"
+        }
+    ],
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": [
+                "%MODID%"
+            ]
+        }
+    ],
+    "type": "aether:repairing",
+    "group": "%GROUP%",
+    "ingredient": {
+        "item": "%ITEMID%"
+    },
+    "repairTime": -1
+}
