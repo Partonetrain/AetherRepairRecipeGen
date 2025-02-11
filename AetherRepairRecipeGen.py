@@ -6,7 +6,7 @@ import csv
 ITEMS_FILE_NAME = "items.csv"
 TEMPLATE_FILE_NAME = "template.json"
 RECIPE_DIR = "recipe"
-items = [[],[],[],[],[],[]]
+items = [[],[],[],[],[],[],[]] #Number of sublists = number of tiers
 start_time = 0
 
 
@@ -91,9 +91,9 @@ def getTimeFromTier(tier):
         return 750
     if(tier == 4): # Diamond
         return 1500
-    if(tier == 4): # Netherite
+    if(tier == 5): # Netherite
         return 2000
-    if(tier > 4): # Anything higher
+    if(tier > 5): # Anything higher
         return 3000
 
 def getGroupFromItem(itemName):
