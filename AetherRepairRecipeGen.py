@@ -54,13 +54,15 @@ def FillTemplate():
     for item_id in row:
       split_id = item_id.split(":")
       mod_id = split_id[0]
+      print("Mod ID: " + mod_id)
       item_name = split_id[1]
       path = RECIPE_DIR + "\\" + mod_id
       tryMakeDir(path)
       recipe_data = template_data
 
       for entry in recipe_data["neoforge:conditions"]:
-        entry["modid"] = entry["modid"].replace("%MODID%", mod_id)
+        entry["modid"] = mod_id
+        assert entry["modid"] == mod_id #previous method wasn't working
         
       for entry in recipe_data["fabric:load_conditions"]:
         entry["values"] = [mod_id]

@@ -1,4 +1,5 @@
 {
+    "_credit": "Created using https://github.com/Partonetrain/AetherRepairRecipeGen",
     "neoforge:conditions": [
         {
             "type": "neoforge:mod_loaded",
